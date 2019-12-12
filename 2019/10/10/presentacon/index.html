@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/apple-touch-icon.png">
+  <link rel="icon" type="image/png" href="/img/global.png">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="description" content="">
+  <meta name="author" content="meinduqiubeio">
+  <meta name="keywords" content="">
+  <title>Presentación del proyecto ~ Demography</title>
+
+  <link rel="stylesheet" href="/lib/font-awesome/css/all.min.css"  >
+<link rel="stylesheet" href="/lib/bootstrap/css/bootstrap.min.css"  >
+<link rel="stylesheet" href="/lib/mdbootstrap/css/mdb.min.css"  >
+<link rel="stylesheet" href="/lib/github-markdown/github-markdown.min.css"  >
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1067060_qzomjdt8bmp.css">
+
+
+  <link rel="stylesheet" href="/lib/prettify/tomorrow-night-eighties.min.css"  >
+
+<link rel="stylesheet" href="/css/main.css"  >
+
+
+  <link rel="stylesheet" href="/lib/fancybox/jquery.fancybox.min.css"  >
+
+
+</head>
+
+
+<body>
+  <header style="height: 70vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand"
+       href="/">&nbsp;<strong>Home</strong>&nbsp;</a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/archives/">Archives</a>
+          </li>
+        
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/categories/">Categories</a>
+          </li>
+        
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/tags/">Tags</a>
+          </li>
+        
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/about/">About</a>
+          </li>
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" data-toggle="modal" data-target="#modalSearch">&nbsp;&nbsp;<i
+                class="iconfont icon-search"></i>&nbsp;&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+
+</nav>
+
+    <div class="view intro-2" id="background"
+         style="background: url('/img/sunset.png')no-repeat center center;
+           background-size: cover;
+           background-attachment: fixed;">
+      <div class="full-bg-img">
+        <div class="mask rgba-black-light flex-center">
+          <div class="container text-center white-text fadeInUp">
+            <span class="h2" id="subtitle">
+              
+            </span>
+
+            
+              <br>
+              
+                <p class="mt-3">
+                  <i class="fas fa-calendar-alt" aria-hidden="true"></i>&nbsp;
+                  Thursday, October 10th 2019, 10:00 am
+                </p>
+              
+
+              <p>
+                
+                  
+                  &nbsp;<i class="far fa-chart-bar"></i>
+                  <span class="post-count">
+                    305 words
+                  </span>&nbsp;
+                
+
+                
+                  
+                  &nbsp;<i class="far fa-clock"></i>
+                  <span class="post-count">
+                      1 min
+                  </span>&nbsp;
+                
+
+                
+                  <!-- 不蒜子统计文章PV -->
+                  
+                  &nbsp;<i class="far fa-eye" aria-hidden="true"></i>&nbsp;
+                  <span id="busuanzi_container_page_pv">
+                    <span id="busuanzi_value_page_pv"></span> times
+                  </span>&nbsp;
+                
+              </p>
+            
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-md">
+      <div class="py-5 z-depth-3" id="board">
+        <div class="post-content mx-auto" id="post">
+          <div class="markdown-body">
+            <h2 id="Sobre-el-proyecto"><a href="#Sobre-el-proyecto" class="headerlink" title="Sobre el proyecto"></a>Sobre el proyecto</h2><p>Nuestro proyecto consiste en realizar un análisis de la demografía mundial, los datos  son obtenidos de la <a href="https://datosmacro.expansion.com/" target="_blank" rel="noopener">DatosMacros</a> . Se realiza un análisis visual de la situación respondiendo a preguntas como:</p>
+<ul>
+<li>Dónde emigran las personas y por qué a ese país.</li>
+<li>De qué países reciben inmigrantes.</li>
+<li>Indice de felicidad.</li>
+<li>Tasa de natalidad y mortalidad.</li>
+<li>Otros criterios sociales en diferentes países.</li>
+</ul>
+<p><img src="/img/world_map.jpg" srcset="/img/loading.gif" alt=""></p>
+<h2 id="Volumen-de-datos"><a href="#Volumen-de-datos" class="headerlink" title="Volumen de datos"></a>Volumen de datos</h2><p><img src="/img/datos.png" srcset="/img/loading.gif" alt=""></p>
+<ul>
+<li>Aproximadamente 200 países cada uno</li>
+<li>Formato .csv</li>
+<li>Gran variedad</li>
+</ul>
+<p>Los datos son recopilados con la herramienta <a href="https://www.import.io/" target="_blank" rel="noopener">import.io</a>  de la página <a href="https://datosmacro.expansion.com/" target="_blank" rel="noopener">DatosMacros</a> mencionado posteriormente.</p>
+<h2 id="Funcionamiento-principal-del-programa"><a href="#Funcionamiento-principal-del-programa" class="headerlink" title="Funcionamiento principal del programa"></a>Funcionamiento principal del programa</h2><p>Se debe tener una carpeta para 2017 y otra para 1990, cada uno con sus correspondientes índices sociales, nombres de los países y una carpeta de Aristas con los ficheros para poder generarlas.</p>
+<p>1)Ejecutar el archivo generarRed.bat (Windows) o generarRed.py usando el comando:</p>
+<pre><code class="shell">python generarRed.py</code></pre>
+<p>2)Seleccionar la red que se quiere generar (2017 o 1990)</p>
+<p>3)Indicar si se quiere generar otra red o no. En caso afirmativo, volver a seleccionar cuál. En caso negativo, acaba la ejecución del programa.</p>
+<p>4)Se generará nodos y aristas de las que se empleará la herramienta <a href="https://gephi.org/para" target="_blank" rel="noopener">Gephi</a> generar los gráficos.</p>
+<p><img src="/img/2017.jpg" srcset="/img/loading.gif" alt=""></p>
+<p>Inmigración del año 2017</p>
+<p><img src="/img/1990.jpg" srcset="/img/loading.gif" alt=""></p>
+<p>Inmigración del año 1990</p>
+<hr>
+<p>Funciona solo para la red de 2017, porque es la que tiene más indicadores sociales y únicamente es necesario tener un fichero de Nodos con la información social de cada país. Debe estar almacenado en la carpeta 2017. </p>
+<p>1)Ejecutar el archivo mejores.bat en windows o mejoresPaises.py en python.</p>
+<pre><code class="shell">python mejoresPaises.py</code></pre>
+<p>2)Se generará un archivo .csv con las puntuaciones obtenidas de cada país.</p>
+<p>3)Puntuación más baja, mejor. Más oscuro, peor para vivir.</p>
+<p><img src="/img/mejor.png" srcset="/img/loading.gif" alt=""></p>
+<hr>
+<h2 id="Herramientas-empleadas"><a href="#Herramientas-empleadas" class="headerlink" title="Herramientas empleadas"></a>Herramientas empleadas</h2><p><img src="/img/python.png" srcset="/img/loading.gif" alt=""></p>
+<p><img src="/img/gefhi.png" srcset="/img/loading.gif" alt=""></p>
+<p><img src="/img/spark.png" srcset="/img/loading.gif" alt=""></p>
+<p><img src="/img/amazon.png" srcset="/img/loading.gif" alt=""></p>
+<p><img src="/img/import.png" srcset="/img/loading.gif" alt=""></p>
+
+            <hr>
+          </div>
+          <br>
+          <div>
+            <p>
+            
+              <span>
+                <i class="iconfont icon-inbox"></i>
+                
+                  <a class="hover-with-bg" href="/categories/Apache%20Spark">Apache Spark</a>
+                  &nbsp;
+                
+              </span>&nbsp;&nbsp;
+            
+            
+              <span>
+                <i class="iconfont icon-tag"></i>
+                
+                  <a class="hover-with-bg" href="/tags/Spark">Spark</a>
+                
+                  <a class="hover-with-bg" href="/tags/Github">Github</a>
+                
+                  <a class="hover-with-bg" href="/tags/importIO">importIO</a>
+                
+              </span>
+            
+            </p>
+            
+              <p class="note note-warning"><a href="https://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License" target="_blank" rel="nofollow noopener noopener">CC BY-SA 3.0 protocol</a> </p>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="d-none d-lg-block col-lg-2 toc-container">
+      
+  <div id="toc">
+    <p class="h4"><i class="far fa-list-alt"></i>&nbsp;TOC</p>
+    <div id="tocbot"></div>
+  </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- custom -->
+
+
+<!-- Comments -->
+<div class="col-lg-7 mx-auto nopadding-md">
+  <div class="container comments mx-auto" id="comments">
+    
+  </div>
+</div>
+
+    
+  </main>
+
+  
+    <a class="z-depth-1" id="scroll-top-button" href="#" role="button">
+      <i class="fa fa-chevron-up scroll-top-arrow" aria-hidden="true"></i>
+    </a>
+  
+
+  
+    <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">Search</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">keyword</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+  
+
+  <footer class="mt-5">
+  <div class="text-center py-3">
+    <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><b>Powered by Hexo</b></a>
+    <i class="iconfont icon-love"></i>
+    <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"> <b>Theme: Fluid</b></a>
+    <br>
+
+    
+  
+    <!-- 不蒜子统计PV -->
+    
+    &nbsp;<span id="busuanzi_container_site_pv">Visited 
+          <span id="busuanzi_value_site_pv"></span> times</span>&nbsp;
+  
+  
+    <!-- 不蒜子统计UV -->
+    
+    &nbsp;<span id="busuanzi_container_site_uv">Visited by 
+            <span id="busuanzi_value_site_uv"></span> persons</span>&nbsp;
+  
+  <br>
+
+
+
+    
+
+  </div>
+</footer>
+
+<!-- SCRIPTS -->
+<script src="/lib/jquery/jquery.min.js" ></script>
+<script src="/lib/popper/popper.min.js" ></script>
+<script src="/lib/bootstrap/js/bootstrap.min.js" ></script>
+<script src="/lib/mdbootstrap/js/mdb.min.js" ></script>
+<script src="/js/main.js" ></script>
+
+
+  <script src="/js/lazyload.js" ></script>
+
+
+
+  
+    <script src="/lib/tocbot/tocbot.min.js" ></script>
+  
+  <script src="/js/post.js" ></script>
+
+
+
+  <script src="/lib/smooth-scroll/smooth-scroll.min.js" ></script>
+
+
+
+  <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" ></script>
+
+
+<!-- Plugins -->
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+
+  <script src="/lib/prettify/prettify.min.js" ></script>
+  <script>
+    $(document).ready(function () {
+      $('pre').addClass('prettyprint  linenums');
+      prettyPrint();
+    })
+  </script>
+
+
+
+  <script src="/lib/typed/typed.min.js" ></script>
+  <script>
+    var typed = new Typed('#subtitle', {
+      strings: [
+        '  ',
+        "Presentación del proyecto&nbsp;",
+      ],
+      cursorChar: "_",
+      typeSpeed: 70,
+      loop: false,
+    });
+    typed.stop();
+    $(document).ready(function () {
+      $(".typed-cursor").addClass("h2");
+      typed.start();
+    });
+  </script>
+
+
+
+  <script src="/lib/anchor/anchor.min.js" ></script>
+  <script>
+    anchors.options = {
+      placement: "right",
+      visible: "false",
+      
+    };
+    var el = "h1,h2,h3,h4,h5,h6".split(",");
+    var res = [];
+    for (item of el) {
+      res.push(".markdown-body > " + item)
+    }
+    anchors.add(res.join(", "))
+  </script>
+
+
+
+  <script src="/js/local-search.js" ></script>
+  <script>
+    var path = "/local-search.xml";
+    var inputArea = document.querySelector("#local-search-input");
+    inputArea.onclick = function () {
+      getSearchFile(path);
+      this.onclick = null
+    }
+  </script>
+
+
+
+  <script src="/lib/fancybox/jquery.fancybox.min.js" ></script>
+  <script>
+    $("#post img:not(.no-zoom img, img[no-zoom])").each(
+      function () {
+        var element = document.createElement("a");
+        $(element).attr("data-fancybox", "images");
+        $(element).attr("href", $(this).attr("src"));
+        $(this).wrap(element);
+      }
+    );
+  </script>
+
+
+
+
+
+
+
+</body>
+</html>

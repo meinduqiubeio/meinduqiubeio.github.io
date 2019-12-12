@@ -8,14 +8,14 @@
 <head>
   <meta charset="UTF-8">
   <link rel="apple-touch-icon" sizes="76x76" href="/img/apple-touch-icon.png">
-  <link rel="icon" type="image/png" href="/img/favicon.png">
+  <link rel="icon" type="image/png" href="/img/global.png">
   <meta name="viewport"
         content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="description" content="">
-  <meta name="author" content="John Doe">
+  <meta name="author" content="meinduqiubeio">
   <meta name="keywords" content="">
-  <title>Hexo</title>
+  <title>Demography</title>
 
   <link rel="stylesheet" href="/lib/font-awesome/css/all.min.css"  >
 <link rel="stylesheet" href="/lib/bootstrap/css/bootstrap.min.css"  >
@@ -40,7 +40,7 @@
     <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
   <div class="container">
     <a class="navbar-brand"
-       href="/">&nbsp;<strong>Hexo</strong>&nbsp;</a>
+       href="/">&nbsp;<strong>Home</strong>&nbsp;</a>
 
     <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
             data-target="#navbarSupportedContent"
@@ -51,12 +51,6 @@
     <!-- Collapsible content -->
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ml-auto text-center">
-        
-          
-          
-          <li class="nav-item">
-            <a class="nav-link" href="/">Home</a>
-          </li>
         
           
           
@@ -96,7 +90,7 @@
 </nav>
 
     <div class="view intro-2" id="background"
-         style="background: url('/img/default.png')no-repeat center center;
+         style="background: url('/img/world_map.jpg')no-repeat center center;
            background-size: cover;
            background-attachment: fixed;">
       <div class="full-bg-img">
@@ -133,32 +127,168 @@
   <div class="row mb-4 mx-auto">
     
     
+      <div class="col-12 col-md-4 m-auto">
+        <a href="/2019/12/03/ejecucion/" target="_self">
+          <img src="/img/paper.png" srcset="/img/loading.gif" alt="Otras funcionalidades" class="img-fluid rounded z-depth-3 index-thumbnails">
+        </a>
+      </div>
+    
     <div class="col-12 col-md-8 m-auto">
-      <a href="/2019/12/05/hello-world/">
-        <p class="h4 index-header">Hello World</p>
+      <a href="/2019/12/03/ejecucion/">
+        <p class="h4 index-header">Otras funcionalidades</p>
         
         
           
         
         <div class="index-excerpt" >
-          <div class="index-text mb-1">Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick StartCreate a new post$ hexo new &quot;My New Post&quot;
-More info: Writing
-Run server$ hexo server
-More info: Server
-Generate static files$ hexo generate
-More info: Generating
-Deploy to remote sites$ hexo deploy
-More info: Deployment
-</div>
+          <div class="index-text mb-1">Instrucciones de ejecución1) Pegar estos scripts en la misma carpeta que el generarRes.py. Ofrece 5 funcionalidades:
+spark-submit nombreScript.py [arg] [argu2] [arg..]
+
+compararPais.py; Usage: comparaPais.py [country1] [country2] [2017|1990]
+-Muestra la comparacion de dos paises en un año.
+
+
+
+infoPais.py; Usage: infoPais.py [country] [inmigrantes|natalidad|mortalidad|esperanza]
+-Muestra la información solicitada de un pais en 1990 y 2017.
+
+
+
+mortalidad_rank.py; Se ejecuta directamente.
+-Muestra </div>
         </div>
       </a>
 
       <div>
         
-          <i class="iconfont icon-riqi2"></i>&nbsp;2019-12-05&nbsp;&nbsp;
+          <i class="iconfont icon-riqi2"></i>&nbsp;2019-12-03&nbsp;&nbsp;
         
         
+          <i class="iconfont icon-inbox"></i>
+          
+            <a href="/categories/Funcionalidades">Funcionalidades</a>&nbsp;
+          &nbsp;
+        
+        
+          <i class="iconfont icon-tag"></i>
+          
+            <a href="/tags/Spark">Spark</a>&nbsp;
+          
+            <a href="/tags/Python">Python</a>&nbsp;
+          
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="row mb-4 mx-auto">
+    
+    
+      <div class="col-12 col-md-4 m-auto">
+        <a href="/2019/12/02/Funcionalidades/" target="_self">
+          <img src="/img/arrow.png" srcset="/img/loading.gif" alt="Preparación del entorno" class="img-fluid rounded z-depth-3 index-thumbnails">
+        </a>
+      </div>
+    
+    <div class="col-12 col-md-8 m-auto">
+      <a href="/2019/12/02/Funcionalidades/">
+        <p class="h4 index-header">Preparación del entorno</p>
+        
+        
+          
+        
+        <div class="index-excerpt" >
+          <div class="index-text mb-1">Entorno de ejecución1.Modo localPara ejecutar este programa necesitamos tener instalado en nuestro ordenador Spark en Modo Local, seguir el tutorial de instalación en GOOGLE CLASSROOM. Configuración guiada de ¨Install Spark in Local Mode¨ de la asignatura Cloud y Big Data impartido por IGNACIO MARTIN LLORENTE
+1.Instalación javasudo apt-get update
+sudo apt install default-jdk
+java -version
+2.Instala Scalasudo apt-get install scala
+scala -version
+3.Pythonsudo apt-get install python
+4.Spark
+Downloa</div>
+        </div>
+      </a>
+
+      <div>
+        
+          <i class="iconfont icon-riqi2"></i>&nbsp;2019-12-02&nbsp;&nbsp;
+        
+        
+          <i class="iconfont icon-inbox"></i>
+          
+            <a href="/categories/Entorno">Entorno</a>&nbsp;
+          &nbsp;
+        
+        
+          <i class="iconfont icon-tag"></i>
+          
+            <a href="/tags/Spark">Spark</a>&nbsp;
+          
+            <a href="/tags/Java">Java</a>&nbsp;
+          
+            <a href="/tags/Python">Python</a>&nbsp;
+          
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="row mb-4 mx-auto">
+    
+    
+      <div class="col-12 col-md-4 m-auto">
+        <a href="/2019/10/10/presentacon/" target="_self">
+          <img src="/img/ditu.jpg" srcset="/img/loading.gif" alt="Presentación del proyecto" class="img-fluid rounded z-depth-3 index-thumbnails">
+        </a>
+      </div>
+    
+    <div class="col-12 col-md-8 m-auto">
+      <a href="/2019/10/10/presentacon/">
+        <p class="h4 index-header">Presentación del proyecto</p>
+        
+        
+          
+        
+        <div class="index-excerpt" >
+          <div class="index-text mb-1">Sobre el proyectoNuestro proyecto consiste en realizar un análisis de la demografía mundial, los datos  son obtenidos de la DatosMacros . Se realiza un análisis visual de la situación respondiendo a preguntas como:
+
+Dónde emigran las personas y por qué a ese país.
+De qué países reciben inmigrantes.
+Indice de felicidad.
+Tasa de natalidad y mortalidad.
+Otros criterios sociales en diferentes países.
+
+
+Volumen de datos
+
+Aproximadamente 200 países cada uno
+Formato .csv
+Gran variedad
+
+Los datos son re</div>
+        </div>
+      </a>
+
+      <div>
+        
+          <i class="iconfont icon-riqi2"></i>&nbsp;2019-10-10&nbsp;&nbsp;
+        
+        
+          <i class="iconfont icon-inbox"></i>
+          
+            <a href="/categories/Apache%20Spark">Apache Spark</a>&nbsp;
+          &nbsp;
+        
+        
+          <i class="iconfont icon-tag"></i>
+          
+            <a href="/tags/Spark">Spark</a>&nbsp;
+          
+            <a href="/tags/Github">Github</a>&nbsp;
+          
+            <a href="/tags/importIO">importIO</a>&nbsp;
+          
         
       </div>
     </div>
@@ -208,23 +338,23 @@ More info: Deployment
 
   <footer class="mt-5">
   <div class="text-center py-3">
-    <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><b>Hexo</b></a>
+    <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><b>Powered by Hexo</b></a>
     <i class="iconfont icon-love"></i>
-    <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"> <b>Fluid</b></a>
+    <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"> <b>Theme: Fluid</b></a>
     <br>
 
     
   
     <!-- 不蒜子统计PV -->
     
-    &nbsp;<span id="busuanzi_container_site_pv">总访问量 
-          <span id="busuanzi_value_site_pv"></span> 次</span>&nbsp;
+    &nbsp;<span id="busuanzi_container_site_pv">Visited 
+          <span id="busuanzi_value_site_pv"></span> times</span>&nbsp;
   
   
     <!-- 不蒜子统计UV -->
     
-    &nbsp;<span id="busuanzi_container_site_uv">总访客数 
-            <span id="busuanzi_value_site_uv"></span> 人</span>&nbsp;
+    &nbsp;<span id="busuanzi_container_site_uv">Visited by 
+            <span id="busuanzi_value_site_uv"></span> persons</span>&nbsp;
   
   <br>
 
@@ -287,7 +417,7 @@ More info: Deployment
     var typed = new Typed('#subtitle', {
       strings: [
         '  ',
-        "&nbsp;",
+        "What's happening in the world&nbsp;",
       ],
       cursorChar: "_",
       typeSpeed: 70,

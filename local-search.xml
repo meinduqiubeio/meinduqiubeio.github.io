@@ -4,13 +4,85 @@
   
   
   <entry>
-    <title>Hello World</title>
-    <link href="undefined2019/12/05/hello-world/"/>
-    <url>2019/12/05/hello-world/</url>
+    <title>Otras funcionalidades</title>
+    <link href="undefined2019/12/03/ejecucion/"/>
+    <url>2019/12/03/ejecucion/</url>
     
-    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre><code class="bash">$ hexo new &quot;My New Post&quot;</code></pre><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre><code class="bash">$ hexo server</code></pre><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre><code class="bash">$ hexo generate</code></pre><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre><code class="bash">$ hexo deploy</code></pre><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
+    <content type="html"><![CDATA[<h2 id="Instrucciones-de-ejecucion"><a href="#Instrucciones-de-ejecucion" class="headerlink" title="Instrucciones de ejecución"></a>Instrucciones de ejecución</h2><p>1) Pegar estos scripts en la misma carpeta que el generarRes.py. Ofrece 5 funcionalidades:</p><pre><code class="shell">spark-submit nombreScript.py [arg] [argu2] [arg..]</code></pre><ol><li><p>compararPais.py; Usage: comparaPais.py [country1] [country2] [2017|1990]</p><p>-Muestra la comparacion de dos paises en un año.</p></li></ol><ol start="2"><li><p>infoPais.py; Usage: infoPais.py [country] [inmigrantes|natalidad|mortalidad|esperanza]</p><p>-Muestra la información solicitada de un pais en 1990 y 2017.</p></li></ol><ol start="3"><li><p>mortalidad_rank.py; Se ejecuta directamente.</p><p>-Muestra el ranking con los 5 mejores paises en cuanto a mortalidad.</p></li></ol><ol start="4"><li><p>natalidad_rank.py; Se ejecuta directamente.</p><p>-Muestra el ranking con los 5 mejores paises en cuanto a natalidad.</p></li></ol><ol start="5"><li><p>esperanza_rank.py; Se ejecuta directamente.</p><p>-Muestra el ranking con los 5 mejores paises en cuanto a esperanza de vida.</p></li></ol>]]></content>
     
     
+    <categories>
+      
+      <category>Funcionalidades</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>Spark</tag>
+      
+      <tag>Python</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>Preparación del entorno</title>
+    <link href="undefined2019/12/02/Funcionalidades/"/>
+    <url>2019/12/02/Funcionalidades/</url>
+    
+    <content type="html"><![CDATA[<h2 id="Entorno-de-ejecucion"><a href="#Entorno-de-ejecucion" class="headerlink" title="Entorno de ejecución"></a>Entorno de ejecución</h2><h4 id="1-Modo-local"><a href="#1-Modo-local" class="headerlink" title="1.Modo local"></a>1.Modo local</h4><p>Para ejecutar este programa necesitamos tener instalado en nuestro ordenador <strong>Spark en Modo Local</strong>, seguir el tutorial de instalación en GOOGLE CLASSROOM. Configuración guiada de ¨Install Spark in Local Mode¨ de la asignatura Cloud y Big Data impartido por IGNACIO MARTIN LLORENTE</p><h5 id="1-Instalacion-java"><a href="#1-Instalacion-java" class="headerlink" title="1.Instalación java"></a>1.Instalación java</h5><pre><code class="shell">sudo apt-get updatesudo apt install default-jdkjava -version</code></pre><h5 id="2-Instala-Scala"><a href="#2-Instala-Scala" class="headerlink" title="2.Instala Scala"></a>2.Instala Scala</h5><pre><code class="shell">sudo apt-get install scalascala -version</code></pre><h5 id="3-Python"><a href="#3-Python" class="headerlink" title="3.Python"></a>3.Python</h5><pre><code class="shell">sudo apt-get install python</code></pre><h5 id="4-Spark"><a href="#4-Spark" class="headerlink" title="4.Spark"></a>4.Spark</h5><pre><code class="shell">Download and untar the Apache Spark 2 distribution to /usr/local/spark$ sudo curl -O http://d3kbcqa49mib13.cloudfront.net/spark-2.2.0-bin-hadoop2.7.tgz$ sudo tar xvf ./spark-2.2.0-bin-hadoop2.7.tgz$ sudo mkdir /usr/local/spark$ sudo cp -r spark-2.2.0-bin-hadoop2.7/* /usr/local/spark</code></pre><h5 id="5-Configura-el-entorno-y-prueba"><a href="#5-Configura-el-entorno-y-prueba" class="headerlink" title="5.Configura el entorno y prueba"></a>5.Configura el entorno y prueba</h5><pre><code class="shell">export PATH=&quot;$PATH:/usr/local/spark/bin&quot;source ~/.profilerun-example SparkPi 10</code></pre><p>Se recomienda usar python 3. Además hay que instalar una libreria unidecode.</p><pre><code class="shell">sudo apt-get install python-pipsudo pip install Unidecode</code></pre><h4 id="2-Modo-cluster"><a href="#2-Modo-cluster" class="headerlink" title="2.Modo cluster"></a>2.Modo cluster</h4><p>Para ejecutarlo en este modo necesitariamos un <strong>cluster</strong> en AWS (Amazon Web Services), utilizando el modulo EMR (<strong>Elastic Map Reduce</strong>). Especificaciones del cluster: </p><p>○ Uncheck the “logging” box<br>○ Launch mode “Cluster”<br>○ Release: 5.8.0<br>○ Applications: Spark<br>○ Instance type: m4.xlarge<br>○ Number of Instances: 3</p><p>Configuración guiada de ¨Spark cluster on AWS¨ de la asignatura Cloud y Big Data impartido por IGNACIO MARTIN LLORENTE</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>Entorno</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>Spark</tag>
+      
+      <tag>Java</tag>
+      
+      <tag>Python</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>Presentación del proyecto</title>
+    <link href="undefined2019/10/10/presentacon/"/>
+    <url>2019/10/10/presentacon/</url>
+    
+    <content type="html"><![CDATA[<h2 id="Sobre-el-proyecto"><a href="#Sobre-el-proyecto" class="headerlink" title="Sobre el proyecto"></a>Sobre el proyecto</h2><p>Nuestro proyecto consiste en realizar un análisis de la demografía mundial, los datos  son obtenidos de la <a href="https://datosmacro.expansion.com/" target="_blank" rel="noopener">DatosMacros</a> . Se realiza un análisis visual de la situación respondiendo a preguntas como:</p><ul><li>Dónde emigran las personas y por qué a ese país.</li><li>De qué países reciben inmigrantes.</li><li>Indice de felicidad.</li><li>Tasa de natalidad y mortalidad.</li><li>Otros criterios sociales en diferentes países.</li></ul><p><img src="/img/world_map.jpg" srcset="/img/loading.gif" alt=""></p><h2 id="Volumen-de-datos"><a href="#Volumen-de-datos" class="headerlink" title="Volumen de datos"></a>Volumen de datos</h2><p><img src="/img/datos.png" srcset="/img/loading.gif" alt=""></p><ul><li>Aproximadamente 200 países cada uno</li><li>Formato .csv</li><li>Gran variedad</li></ul><p>Los datos son recopilados con la herramienta <a href="https://www.import.io/" target="_blank" rel="noopener">import.io</a>  de la página <a href="https://datosmacro.expansion.com/" target="_blank" rel="noopener">DatosMacros</a> mencionado posteriormente.</p><h2 id="Funcionamiento-principal-del-programa"><a href="#Funcionamiento-principal-del-programa" class="headerlink" title="Funcionamiento principal del programa"></a>Funcionamiento principal del programa</h2><p>Se debe tener una carpeta para 2017 y otra para 1990, cada uno con sus correspondientes índices sociales, nombres de los países y una carpeta de Aristas con los ficheros para poder generarlas.</p><p>1)Ejecutar el archivo generarRed.bat (Windows) o generarRed.py usando el comando:</p><pre><code class="shell">python generarRed.py</code></pre><p>2)Seleccionar la red que se quiere generar (2017 o 1990)</p><p>3)Indicar si se quiere generar otra red o no. En caso afirmativo, volver a seleccionar cuál. En caso negativo, acaba la ejecución del programa.</p><p>4)Se generará nodos y aristas de las que se empleará la herramienta <a href="https://gephi.org/para" target="_blank" rel="noopener">Gephi</a> generar los gráficos.</p><p><img src="/img/2017.jpg" srcset="/img/loading.gif" alt=""></p><p>Inmigración del año 2017</p><p><img src="/img/1990.jpg" srcset="/img/loading.gif" alt=""></p><p>Inmigración del año 1990</p><hr><p>Funciona solo para la red de 2017, porque es la que tiene más indicadores sociales y únicamente es necesario tener un fichero de Nodos con la información social de cada país. Debe estar almacenado en la carpeta 2017. </p><p>1)Ejecutar el archivo mejores.bat en windows o mejoresPaises.py en python.</p><pre><code class="shell">python mejoresPaises.py</code></pre><p>2)Se generará un archivo .csv con las puntuaciones obtenidas de cada país.</p><p>3)Puntuación más baja, mejor. Más oscuro, peor para vivir.</p><p><img src="/img/mejor.png" srcset="/img/loading.gif" alt=""></p><hr><h2 id="Herramientas-empleadas"><a href="#Herramientas-empleadas" class="headerlink" title="Herramientas empleadas"></a>Herramientas empleadas</h2><p><img src="/img/python.png" srcset="/img/loading.gif" alt=""></p><p><img src="/img/gefhi.png" srcset="/img/loading.gif" alt=""></p><p><img src="/img/spark.png" srcset="/img/loading.gif" alt=""></p><p><img src="/img/amazon.png" srcset="/img/loading.gif" alt=""></p><p><img src="/img/import.png" srcset="/img/loading.gif" alt=""></p>]]></content>
+    
+    
+    <categories>
+      
+      <category>Apache Spark</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>Spark</tag>
+      
+      <tag>Github</tag>
+      
+      <tag>importIO</tag>
+      
+    </tags>
     
   </entry>
   
